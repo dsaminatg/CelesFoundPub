@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | Celestia Foundation</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/filters.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/favicon.png" alt="Celestia Foundation Logo"
+                    style="height: 40px; vertical-align: middle; margin-right: 8px;">
+                Celestia <span>Foundation</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="background-color: var(--primary-color); color: var(--white); padding: 4rem 0;">
+        <div class="container text-center">
+            <h1>Resources & Tools</h1>
+            <p>Find the help you need.</p>
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section class="section" style="padding-bottom: 2rem;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; justify-content: center;">
+                    <input type="text" id="searchInput"
+                        placeholder="Search resources (e.g., 'clinic', 'food', 'emergency')"
+                        style="flex: 1; min-width: 280px; padding: 1rem 1.5rem; border: 1px solid #ddd; border-radius: 50px; font-size: 1rem; outline: none; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                </div>
+
+                <div class="filters"
+                    style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1rem; flex-wrap: wrap;">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="medical">🏥 Medical</button>
+                    <button class="filter-btn" data-category="veterinary">🐾 Veterinary</button>
+                    <button class="filter-btn" data-category="mental">🧠 Mental Health</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Grid -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div id="resourcesGrid" class="grid-3">
+                <!-- Dynamic Content Will Be Loaded Here -->
+            </div>
+            <div id="noResults" style="display: none; text-align: center; opacity: 0.7; margin-top: 2rem;">
+                <p>No resources found matching your search.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>Celestia Foundation</h4>
+                    <img src="images/california_map.png" alt="California Map"
+                        style="max-width: 120px; margin-top: 1rem; opacity: 0.8;">
+
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>www.celestiafoundation.org</p>
+                    <p>Email: contact@celestiafoundation.org</p>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Celestia Foundation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
